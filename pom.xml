@@ -25,6 +25,7 @@
 		<wiremock.version>1.51</wiremock.version>
 		<min.line.coverage>0</min.line.coverage>
 		<min.branch.coverage>0</min.branch.coverage>
+		<mockito.version>1.9.5</mockito.version>
 	</properties>
 	<developers>
 		<developer>
