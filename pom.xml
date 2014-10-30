@@ -2,14 +2,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.nicotitan</groupId>
-    <artifactId>ideas</artifactId>
+	<artifactId>ideas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>IDEAS</name>
 	<description>Ideas</description>
 	<modules>
-        <module>services</module>
-    </modules>
+		<module>services</module>
+	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -118,51 +118,64 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<!-- 	<build> -->
-<!-- 		<plugins> -->
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.jacoco</groupId> -->
-<!-- 				<artifactId>jacoco-maven-plugin</artifactId> -->
-<!-- 				<version>0.6.4.201312101107</version> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<goals> -->
-<!-- 							<goal>prepare-agent</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 					<execution> -->
-<!-- 						<id>default-report</id> -->
-<!-- 						<goals> -->
-<!-- 							<goal>report</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 					<execution> -->
-<!-- 						<id>default-check</id> -->
-<!-- 						<goals> -->
-<!-- 							<goal>check</goal> -->
-<!-- 						</goals> -->
-<!-- 						<configuration> -->
-<!-- 							<rules> -->
-<!-- 								<rule implementation="org.jacoco.maven.RuleConfiguration"> -->
-<!-- 									<element>BUNDLE</element> -->
-<!-- 									<limits> -->
-<!-- 										<limit implementation="org.jacoco.report.check.Limit"> -->
-<!-- 											<counter>BRANCH</counter> -->
-<!-- 											<value>COVEREDRATIO</value> -->
-<!-- 											<minimum>${min.branch.coverage}</minimum> -->
-<!-- 										</limit> -->
-<!-- 										<limit implementation="org.jacoco.report.check.Limit"> -->
-<!-- 											<counter>LINE</counter> -->
-<!-- 											<value>COVEREDRATIO</value> -->
-<!-- 											<minimum>${min.line.coverage}</minimum> -->
-<!-- 										</limit> -->
-<!-- 									</limits> -->
-<!-- 								</rule> -->
-<!-- 							</rules> -->
-<!-- 						</configuration> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
-<!-- 			</plugin> -->
-<!-- 		</plugins> -->
-<!-- 	</build> -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<!-- or whatever version you use -->
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<!-- <build> -->
+	<!-- <plugins> -->
+	<!-- <plugin> -->
+	<!-- <groupId>org.jacoco</groupId> -->
+	<!-- <artifactId>jacoco-maven-plugin</artifactId> -->
+	<!-- <version>0.6.4.201312101107</version> -->
+	<!-- <executions> -->
+	<!-- <execution> -->
+	<!-- <goals> -->
+	<!-- <goal>prepare-agent</goal> -->
+	<!-- </goals> -->
+	<!-- </execution> -->
+	<!-- <execution> -->
+	<!-- <id>default-report</id> -->
+	<!-- <goals> -->
+	<!-- <goal>report</goal> -->
+	<!-- </goals> -->
+	<!-- </execution> -->
+	<!-- <execution> -->
+	<!-- <id>default-check</id> -->
+	<!-- <goals> -->
+	<!-- <goal>check</goal> -->
+	<!-- </goals> -->
+	<!-- <configuration> -->
+	<!-- <rules> -->
+	<!-- <rule implementation="org.jacoco.maven.RuleConfiguration"> -->
+	<!-- <element>BUNDLE</element> -->
+	<!-- <limits> -->
+	<!-- <limit implementation="org.jacoco.report.check.Limit"> -->
+	<!-- <counter>BRANCH</counter> -->
+	<!-- <value>COVEREDRATIO</value> -->
+	<!-- <minimum>${min.branch.coverage}</minimum> -->
+	<!-- </limit> -->
+	<!-- <limit implementation="org.jacoco.report.check.Limit"> -->
+	<!-- <counter>LINE</counter> -->
+	<!-- <value>COVEREDRATIO</value> -->
+	<!-- <minimum>${min.line.coverage}</minimum> -->
+	<!-- </limit> -->
+	<!-- </limits> -->
+	<!-- </rule> -->
+	<!-- </rules> -->
+	<!-- </configuration> -->
+	<!-- </execution> -->
+	<!-- </executions> -->
+	<!-- </plugin> -->
+	<!-- </plugins> -->
+	<!-- </build> -->
 </project>
