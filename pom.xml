@@ -31,13 +31,13 @@
 		<developer>
 			<id>nicolas.martinez</id>
 			<email>nicolasalejandromartinez@gmail.com</email>
-			<organization>TITAN</organization>
+			<organization>Titan</organization>
 			<timezone>-8</timezone>
 		</developer>
 		<developer>
 			<id>fernando.torija</id>
 			<email>gomastico@gmail.com</email>
-			<organization>TORO</organization>
+			<organization>Toro</organization>
 			<timezone>-3</timezone>
 		</developer>
 	</developers>
