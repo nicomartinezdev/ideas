@@ -10,6 +10,7 @@
 .project
 .classpath
 .settings/
+.metadata/
 .externalToolBuilders/
 maven-eclipse.xml
 
