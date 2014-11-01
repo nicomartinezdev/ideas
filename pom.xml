@@ -8,7 +8,9 @@
 	<name>IDEAS</name>
 	<description>Ideas</description>
 	<modules>
-        <module>services</module>
+        <module>model</module>
+		<module>services</module>
+		<module>api</module>
     </modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
